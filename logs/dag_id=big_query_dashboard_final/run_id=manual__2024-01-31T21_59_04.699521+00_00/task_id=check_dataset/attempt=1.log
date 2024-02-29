@@ -1,0 +1,19 @@
+[2024-01-31T21:59:10.335+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: big_query_dashboard_final.check_dataset manual__2024-01-31T21:59:04.699521+00:00 [queued]>
+[2024-01-31T21:59:10.364+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: big_query_dashboard_final.check_dataset manual__2024-01-31T21:59:04.699521+00:00 [queued]>
+[2024-01-31T21:59:10.372+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-01-31T21:59:10.428+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): check_dataset> on 2024-01-31 21:59:04.699521+00:00
+[2024-01-31T21:59:10.449+0000] {standard_task_runner.py:60} INFO - Started process 1543 to run task
+[2024-01-31T21:59:10.456+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'big_query_dashboard_final', 'check_dataset', 'manual__2024-01-31T21:59:04.699521+00:00', '--job-id', '612', '--raw', '--subdir', 'DAGS_FOLDER/Main_DAGS.py', '--cfg-path', '/tmp/tmpdwypcfm_']
+[2024-01-31T21:59:10.466+0000] {standard_task_runner.py:88} INFO - Job 612: Subtask check_dataset
+[2024-01-31T21:59:10.554+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-01-31T21:59:10.752+0000] {task_command.py:423} INFO - Running <TaskInstance: big_query_dashboard_final.check_dataset manual__2024-01-31T21:59:04.699521+00:00 [running]> on host e7e4b550b444
+[2024-01-31T21:59:11.052+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='big_query_dashboard_final' AIRFLOW_CTX_TASK_ID='check_dataset' AIRFLOW_CTX_EXECUTION_DATE='2024-01-31T21:59:04.699521+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-31T21:59:04.699521+00:00'
+[2024-01-31T21:59:11.097+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-01-31T21:59:11.120+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-31T21:59:11.132+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-01-31T21:59:11.351+0000] {sql.py:450} INFO - Running statement: SELECT COUNT(schema_name) FROM `wine-de-dashboard`.INFORMATION_SCHEMA.SCHEMATA WHERE schema_name = 'dashboard_dataset', parameters: None
+[2024-01-31T21:59:11.359+0000] {bigquery.py:1596} INFO - Inserting job ***_1706738351356565_8b51f3a6d85ef5dab000857e36b2f026
+[2024-01-31T21:59:13.791+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-01-31T21:59:13.829+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=big_query_dashboard_final, task_id=check_dataset, execution_date=20240131T215904, start_date=20240131T215910, end_date=20240131T215913
+[2024-01-31T21:59:13.927+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-31T21:59:14.018+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

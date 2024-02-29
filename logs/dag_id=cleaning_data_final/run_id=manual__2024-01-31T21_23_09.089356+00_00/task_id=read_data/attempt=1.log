@@ -1,0 +1,99 @@
+[2024-01-31T21:23:33.483+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cleaning_data_final.read_data manual__2024-01-31T21:23:09.089356+00:00 [queued]>
+[2024-01-31T21:23:33.506+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cleaning_data_final.read_data manual__2024-01-31T21:23:09.089356+00:00 [queued]>
+[2024-01-31T21:23:33.508+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-01-31T21:23:33.542+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): read_data> on 2024-01-31 21:23:09.089356+00:00
+[2024-01-31T21:23:33.561+0000] {standard_task_runner.py:60} INFO - Started process 249 to run task
+[2024-01-31T21:23:33.568+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cleaning_data_final', 'read_data', 'manual__2024-01-31T21:23:09.089356+00:00', '--job-id', '515', '--raw', '--subdir', 'DAGS_FOLDER/Main_DAGS.py', '--cfg-path', '/tmp/tmp1mol4d0a']
+[2024-01-31T21:23:33.575+0000] {standard_task_runner.py:88} INFO - Job 515: Subtask read_data
+[2024-01-31T21:23:33.611+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-01-31T21:23:33.706+0000] {task_command.py:423} INFO - Running <TaskInstance: cleaning_data_final.read_data manual__2024-01-31T21:23:09.089356+00:00 [running]> on host e7e4b550b444
+[2024-01-31T21:23:33.946+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cleaning_data_final' AIRFLOW_CTX_TASK_ID='read_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-31T21:23:09.089356+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-31T21:23:09.089356+00:00'
+[2024-01-31T21:23:34.172+0000] {python.py:201} INFO - Done. Returned value was: {'wines_data':        ABV Acidity  ...                                    WineName WineryID
+0      7.5    High  ...                          Espumante Moscatel    10001
+1     12.0  Medium  ...                                  Ancellotta    10001
+2     12.0    High  ...                          Cabernet Sauvignon    10002
+3     11.0  Medium  ...             Maison de Ville Cabernet-Merlot    10000
+4      7.5    High  ...                Do Lugar Moscatel Espumantes    10012
+...    ...     ...  ...                                         ...      ...
+1002  13.5    High  ...                               Petite Arvine    66662
+1003  14.0    High  ...                         St. Laurent Reserve    62148
+1004  12.2    High  ...                     Mariengarten Chardonnay    62556
+1005  12.2    High  ...  Grüner Veltliner Federspiel Ried Kreuzberg    62656
+1006  13.0  Medium  ...                            Drama Queen Rosé    69643
+
+[1007 rows x 16 columns], 'wineries_data':                                     Website  WineryID           WineryName
+0          http://www.vinicolaperini.com.br     10001          Casa Perini
+1    https://www.emporiocastellamare.com.br     10002         Castellamare
+2          http://www.vinicolaaurora.com.br     10000               Aurora
+3               http://www.dalpizzol.com.br     10012           Dal Pizzol
+4                  http://www.salton.com.br     10011               Salton
+..                                      ...       ...                  ...
+787           http://www.niklaus-wittwer.ch     66662      Niklaus Wittwer
+788               http://www.hundsdorfer.at     62148          Hundsdorfer
+789            http://www.muster-gamlitz.at     62556       Muster-Gamlitz
+790             http://www.huchenfischer.at     62656        Josef Fischer
+791                                     NaN     69643  Bridge Pa Vineyards
+
+[792 rows x 3 columns], 'ratings_data':      Avg_Rating  WineID
+0          3.20  180028
+1          4.29  179047
+2          3.07  179508
+3          3.09  164598
+4          4.24  140962
+..          ...     ...
+990        3.46  167425
+991        3.28  126510
+992        4.30  194848
+993        3.59  195262
+994        3.81  174651
+
+[995 rows x 2 columns], 'harmonize_images_data':            Harmonize                    harmonize_url
+0           Aperitif  https://i.imgur.com/ljbD8I1.jpg
+1          Appetizer  https://i.imgur.com/89YBe8q.jpg
+2           Barbecue  https://i.imgur.com/RN7CMSC.jpg
+3               Beef  https://i.imgur.com/iu8G8AX.jpg
+4        Blue Cheese  https://i.imgur.com/YQkTskU.jpg
+5               Cake  https://i.imgur.com/bM1SK50.jpg
+6             Cheese  https://i.imgur.com/JqRaGi3.jpg
+7            Chicken  https://i.imgur.com/BkWLfqy.jpg
+8          Chocolate  https://i.imgur.com/XUSfEOs.jpg
+9            Codfish  https://i.imgur.com/YddkGVZ.jpg
+10          ColdCuts  https://i.imgur.com/J8TOmmT.jpg
+11             Cream  https://i.imgur.com/ny2JNgE.jpg
+12        Cured Meat  https://i.imgur.com/3ilwWLM.jpg
+13           Dessert  https://i.imgur.com/OxBe4dL.jpg
+14              Duck  https://i.imgur.com/kjkJY0J.jpg
+15              Fish  https://i.imgur.com/s8Gi66r.jpg
+16      French Fries  https://i.imgur.com/LllUwal.jpg
+17             Fruit  https://i.imgur.com/0YhMgOr.jpg
+18     Fruit Dessert  https://i.imgur.com/WOy7zy0.jpg
+19         Game Meat  https://i.imgur.com/JB5GewS.jpg
+20       Goat Cheese  https://i.imgur.com/VJxhdtS.jpg
+21           Grilled  https://i.imgur.com/wdwt93M.jpg
+22               Ham  https://i.imgur.com/GkxAToT.jpg
+23       Hard Cheese  https://i.imgur.com/rSMBCCG.jpg
+24              Lamb  https://i.imgur.com/6KsLYqv.jpg
+25         Lean Fish  https://i.imgur.com/77KRQs1.jpg
+26       Light Stews  https://i.imgur.com/RvxwbPW.jpg
+27  Maturated Cheese  https://i.imgur.com/QjmO1P7.jpg
+28         Mushrooms  https://i.imgur.com/oLl0LPs.jpg
+29             Pasta  https://i.imgur.com/pV2oeyH.jpg
+30             Pizza  https://i.imgur.com/YhBLlh3.jpg
+31              Pork  https://i.imgur.com/8DpPPKS.jpg
+32           Poultry  https://i.imgur.com/hN2xbrx.jpg
+33         Rich Fish  https://i.imgur.com/6b7wzhE.jpg
+34           Risotto  https://i.imgur.com/6vI8W84.jpg
+35             Salad  https://i.imgur.com/TeyxC6a.jpg
+36           Seafood  https://i.imgur.com/hvrfdQr.jpg
+37         Shellfish  https://i.imgur.com/MAU7m4O.jpg
+38             Snack  https://i.imgur.com/SvE2Dlk.jpg
+39       Soft Cheese  https://i.imgur.com/j11GgC5.jpg
+40           Soufflé  https://i.imgur.com/S6P6nxQ.jpg
+41        Spicy Food  https://i.imgur.com/CoYUZHs.jpg
+42     Sweet Dessert  https://i.imgur.com/NPAIkrs.jpg
+43     Tomato Dishes  https://i.imgur.com/zuqhBQj.jpg
+44              Veal  https://i.imgur.com/VaZt9sp.jpg
+45        Vegetarian  https://i.imgur.com/XjVFTc9.jpg}
+[2024-01-31T21:23:34.554+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=cleaning_data_final, task_id=read_data, execution_date=20240131T212309, start_date=20240131T212333, end_date=20240131T212334
+[2024-01-31T21:23:34.634+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-31T21:23:34.691+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

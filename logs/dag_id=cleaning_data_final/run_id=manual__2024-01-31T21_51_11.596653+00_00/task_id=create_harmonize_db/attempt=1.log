@@ -1,0 +1,72 @@
+[2024-01-31T21:51:34.163+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cleaning_data_final.create_harmonize_db manual__2024-01-31T21:51:11.596653+00:00 [queued]>
+[2024-01-31T21:51:34.179+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cleaning_data_final.create_harmonize_db manual__2024-01-31T21:51:11.596653+00:00 [queued]>
+[2024-01-31T21:51:34.180+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-01-31T21:51:34.201+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): create_harmonize_db> on 2024-01-31 21:51:11.596653+00:00
+[2024-01-31T21:51:34.217+0000] {standard_task_runner.py:60} INFO - Started process 1004 to run task
+[2024-01-31T21:51:34.224+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cleaning_data_final', 'create_harmonize_db', 'manual__2024-01-31T21:51:11.596653+00:00', '--job-id', '575', '--raw', '--subdir', 'DAGS_FOLDER/Main_DAGS.py', '--cfg-path', '/tmp/tmp2n297g4j']
+[2024-01-31T21:51:34.229+0000] {standard_task_runner.py:88} INFO - Job 575: Subtask create_harmonize_db
+[2024-01-31T21:51:34.254+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-01-31T21:51:34.308+0000] {task_command.py:423} INFO - Running <TaskInstance: cleaning_data_final.create_harmonize_db manual__2024-01-31T21:51:11.596653+00:00 [running]> on host e7e4b550b444
+[2024-01-31T21:51:34.448+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cleaning_data_final' AIRFLOW_CTX_TASK_ID='create_harmonize_db' AIRFLOW_CTX_EXECUTION_DATE='2024-01-31T21:51:11.596653+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-31T21:51:11.596653+00:00'
+[2024-01-31T21:51:34.628+0000] {python.py:201} INFO - Done. Returned value was: {'wine_id':       HarmonizeID     Harmonize  WineID                    harmonize_url
+0         1000001          Pork  100001  https://i.imgur.com/8DpPPKS.jpg
+1         1000001          Pork  100007  https://i.imgur.com/8DpPPKS.jpg
+2         1000001          Pork  100022  https://i.imgur.com/8DpPPKS.jpg
+3         1000001          Pork  100025  https://i.imgur.com/8DpPPKS.jpg
+4         1000001          Pork  104005  https://i.imgur.com/8DpPPKS.jpg
+...           ...           ...     ...                              ...
+4192      1000041   Goat Cheese  197701  https://i.imgur.com/VJxhdtS.jpg
+4193      1000042         Cream  141193  https://i.imgur.com/ny2JNgE.jpg
+4194      1000044       Dessert  162457  https://i.imgur.com/OxBe4dL.jpg
+4195      1000045  French Fries  167464  https://i.imgur.com/LllUwal.jpg
+4196      1000046          Duck  171552  https://i.imgur.com/kjkJY0J.jpg
+
+[4197 rows x 4 columns], 'no_wine_id':       HarmonizeID         Harmonize                    harmonize_url
+0         1000001              Pork  https://i.imgur.com/8DpPPKS.jpg
+264       1000002         Rich Fish  https://i.imgur.com/6b7wzhE.jpg
+429       1000003         Shellfish  https://i.imgur.com/MAU7m4O.jpg
+685       1000004              Beef  https://i.imgur.com/iu8G8AX.jpg
+1240      1000005          Barbecue  https://i.imgur.com/RN7CMSC.jpg
+1242      1000006           Codfish  https://i.imgur.com/YddkGVZ.jpg
+1243      1000007             Pasta  https://i.imgur.com/pV2oeyH.jpg
+1401      1000008             Pizza  https://i.imgur.com/YhBLlh3.jpg
+1405      1000009            Cheese  https://i.imgur.com/JqRaGi3.jpg
+1408      1000010              Lamb  https://i.imgur.com/6KsLYqv.jpg
+1817      1000011           Poultry  https://i.imgur.com/hN2xbrx.jpg
+2399      1000012         Game Meat  https://i.imgur.com/JB5GewS.jpg
+2753      1000013              Veal  https://i.imgur.com/VaZt9sp.jpg
+2948      1000014        Vegetarian  https://i.imgur.com/XjVFTc9.jpg
+3126      1000015         Appetizer  https://i.imgur.com/89YBe8q.jpg
+3225      1000016             Snack  https://i.imgur.com/SvE2Dlk.jpg
+3311      1000017  Maturated Cheese  https://i.imgur.com/QjmO1P7.jpg
+3438      1000018       Hard Cheese  https://i.imgur.com/rSMBCCG.jpg
+3555      1000019        Spicy Food  https://i.imgur.com/CoYUZHs.jpg
+3697      1000020     Sweet Dessert  https://i.imgur.com/NPAIkrs.jpg
+3745      1000021         Mushrooms  https://i.imgur.com/oLl0LPs.jpg
+3759      1000022         Lean Fish  https://i.imgur.com/77KRQs1.jpg
+3838      1000023       Soft Cheese  https://i.imgur.com/j11GgC5.jpg
+3923      1000024           Grilled  https://i.imgur.com/wdwt93M.jpg
+3927      1000025           Soufflé  https://i.imgur.com/S6P6nxQ.jpg
+3928      1000026           Seafood  https://i.imgur.com/hvrfdQr.jpg
+3936      1000027           Risotto  https://i.imgur.com/6vI8W84.jpg
+3938      1000028             Salad  https://i.imgur.com/TeyxC6a.jpg
+3947      1000029             Fruit  https://i.imgur.com/0YhMgOr.jpg
+3956      1000030              Fish  https://i.imgur.com/s8Gi66r.jpg
+3962      1000031           Chicken  https://i.imgur.com/BkWLfqy.jpg
+3970      1000032               Ham  https://i.imgur.com/GkxAToT.jpg
+3973      1000033       Blue Cheese  https://i.imgur.com/YQkTskU.jpg
+3996      1000034              Cake  https://i.imgur.com/bM1SK50.jpg
+4003      1000035         Chocolate  https://i.imgur.com/XUSfEOs.jpg
+4006      1000036        Cured Meat  https://i.imgur.com/3ilwWLM.jpg
+4121      1000037     Tomato Dishes  https://i.imgur.com/zuqhBQj.jpg
+4124      1000038       Light Stews  https://i.imgur.com/RvxwbPW.jpg
+4126      1000039          Aperitif  https://i.imgur.com/ljbD8I1.jpg
+4130      1000040     Fruit Dessert  https://i.imgur.com/WOy7zy0.jpg
+4150      1000041       Goat Cheese  https://i.imgur.com/VJxhdtS.jpg
+4193      1000042             Cream  https://i.imgur.com/ny2JNgE.jpg
+4194      1000044           Dessert  https://i.imgur.com/OxBe4dL.jpg
+4195      1000045      French Fries  https://i.imgur.com/LllUwal.jpg
+4196      1000046              Duck  https://i.imgur.com/kjkJY0J.jpg}
+[2024-01-31T21:51:34.696+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=cleaning_data_final, task_id=create_harmonize_db, execution_date=20240131T215111, start_date=20240131T215134, end_date=20240131T215134
+[2024-01-31T21:51:34.745+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-31T21:51:34.785+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

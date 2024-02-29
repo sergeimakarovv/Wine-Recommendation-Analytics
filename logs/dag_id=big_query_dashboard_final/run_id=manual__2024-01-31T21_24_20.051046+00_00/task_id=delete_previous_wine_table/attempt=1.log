@@ -1,0 +1,18 @@
+[2024-01-31T21:25:34.476+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: big_query_dashboard_final.delete_previous_wine_table manual__2024-01-31T21:24:20.051046+00:00 [queued]>
+[2024-01-31T21:25:34.499+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: big_query_dashboard_final.delete_previous_wine_table manual__2024-01-31T21:24:20.051046+00:00 [queued]>
+[2024-01-31T21:25:34.501+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-01-31T21:25:34.532+0000] {taskinstance.py:2191} INFO - Executing <Task(BigQueryDeleteTableOperator): delete_previous_wine_table> on 2024-01-31 21:24:20.051046+00:00
+[2024-01-31T21:25:34.550+0000] {standard_task_runner.py:60} INFO - Started process 442 to run task
+[2024-01-31T21:25:34.566+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'big_query_dashboard_final', 'delete_previous_wine_table', 'manual__2024-01-31T21:24:20.051046+00:00', '--job-id', '539', '--raw', '--subdir', 'DAGS_FOLDER/Main_DAGS.py', '--cfg-path', '/tmp/tmp35_jnh01']
+[2024-01-31T21:25:34.580+0000] {standard_task_runner.py:88} INFO - Job 539: Subtask delete_previous_wine_table
+[2024-01-31T21:25:34.633+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-01-31T21:25:34.765+0000] {task_command.py:423} INFO - Running <TaskInstance: big_query_dashboard_final.delete_previous_wine_table manual__2024-01-31T21:24:20.051046+00:00 [running]> on host e7e4b550b444
+[2024-01-31T21:25:34.933+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='big_query_dashboard_final' AIRFLOW_CTX_TASK_ID='delete_previous_wine_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-31T21:24:20.051046+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-31T21:24:20.051046+00:00'
+[2024-01-31T21:25:34.940+0000] {bigquery.py:2458} INFO - Deleting: wine-de-dashboard.dashboard_dataset.wines_table
+[2024-01-31T21:25:34.943+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-01-31T21:25:34.945+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-31T21:25:34.948+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-01-31T21:25:35.810+0000] {bigquery.py:1226} INFO - Deleted table wine-de-dashboard.dashboard_dataset.wines_table
+[2024-01-31T21:25:35.829+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=big_query_dashboard_final, task_id=delete_previous_wine_table, execution_date=20240131T212420, start_date=20240131T212534, end_date=20240131T212535
+[2024-01-31T21:25:35.904+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-31T21:25:35.935+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

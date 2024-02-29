@@ -1,0 +1,325 @@
+RegionID,RegionName
+1001,Serra Gaúcha
+1038,Alentejano
+1034,Vinho Verde
+1031,Porto
+1002,Vale dos Vinhedos
+1027,Serra Negra
+1039,Alentejo
+1004,Campanha Gaúcha
+1010,Vale do São Francisco
+1023,Minas Gerais
+1048,Beiras
+1000,Rio Grande do Sul
+1763,California
+1035,Lisboa
+1032,Douro
+1073,Vinho de Portugal
+1052,Duriense
+1040,Minho
+1046,Bairrada
+1984,Jerez-Xérès-Sherry
+3213,Fino Sherry
+3212,Amontillado Sherry
+1057,Madeirense
+1081,Mosel
+1102,Pfalz
+1104,Rheingau
+1100,Nahe
+1105,Rheinhessen
+1084,Ahr
+1080,Baden
+1098,Mayschoss
+1086,Brauneberg
+1389,Méditerranée
+1111,Württemberg
+1091,Franken
+1188,Champagne
+1396,Pauillac
+1421,Rhone Valley
+1138,Beaujolais-Villages
+1216,Châteauneuf-du-Pape
+1433,Saint-Estèphe
+1437,Saint-Julien
+1153,Bourgogne
+1474,Vin de France
+1276,Côtes-du-Rhône
+1125,Alsace
+1446,Saint-Émilion Grand Cru
+1455,Sauternes
+1448,Sancerre
+1311,Haut-Médoc
+1151,Bordeaux Supérieur
+1328,Languedoc-Roussillon
+1400,Pessac-Léognan
+1408,Pouilly-Fumé
+1175,Chablis
+1265,Côtes de Gascogne
+1262,Côtes de Bordeaux
+1136,Beaujolais
+1233,Corton-Charlemagne Grand Cru
+1401,Petit Chablis
+1169,Cahors
+1149,Bordeaux
+1407,Pouilly-Fuissé
+1263,Côtes de Bourg
+2066,San Juan
+1342,Margaux
+1193,Champagne Grand Cru 'Bouzy'
+1306,Graves
+1368,Moulis-en-Médoc
+1292,Fronsac
+1404,Pomerol
+1298,Gevrey-Chambertin
+1250,Crémant de Bourgogne
+1349,Meursault
+1291,Francs-Côtes de Bordeaux
+1468,Vacqueyras
+1467,Upper Loire
+1228,Corbières
+1347,Mercurey
+1366,Morgon
+1334,Listrac-Médoc
+1184,Chambolle-Musigny
+1154,Bourgogne Aligoté
+1266,Côtes de Provence
+1248,Crémant d'Alsace
+1405,Pommard
+1967,Castilla
+1252,Crémant de Loire
+1196,Champagne Grand Cru 'Le Mesnil-sur-Oger'
+1411,Provence
+1985,Jumilla
+1519,Barolo
+1190,Champagne Grand Cru 'Ambonnay'
+1449,Santenay
+1289,Fleurie
+1392,Nuits-Saint-Georges
+1302,Gigondas
+2006,Priorat
+2037,Vino de España
+1322,Jurançon
+1165,Cabardès
+1178,Chablis 1er Cru 'Montmains'
+1133,Bandol
+1351,Meursault 1er Cru 'La pièce sous le Bois'
+1510,Barbaresco
+1531,Brunello di Montalcino
+1708,Valdadige
+1699,Toscana
+1678,Salento
+2070,Tupungato
+1703,Trento
+1627,Marche
+1659,Prosecco
+1690,Südtirol-Alto Adige
+1736,Delle Venezie
+1511,Barbera d'Alba
+1714,Valpolicella Classico
+1718,Valtellina
+1618,Langhe
+1542,Chianti
+1715,Valpolicella Ripasso
+1602,Gavi
+1598,Friuli-Venezia Giulia
+1655,Piemonte
+1662,Puglia
+1545,Chianti Colli Senesi
+1568,Conegliano-Valdobbiadene Prosecco
+1582,Emilia-Romagna
+1505,Amarone della Valpolicella
+1574,Costa Toscana
+1639,Montepulciano d'Abruzzo
+3005,Vin Santo del Chianti Classico
+1676,Rubicone
+1641,Moscato d'Asti
+1674,Rosso di Montalcino
+1734,Vino d'Italia
+1651,Orvieto
+1701,Trentino
+1606,Greco di Tufo
+1628,Maremma Toscana
+1512,Barbera d'Asti
+1584,Etna
+1528,Brachetto d'Acqui
+1658,Primitivo di Manduria
+1579,Dolcetto d'Alba
+1506,Amarone della Valpolicella Classico
+3214,Grappa di Barbaresco
+1543,Chianti Classico
+1501,Abruzzo
+1508,Asti
+2033,Valdepeñas
+3173,Recioto della Valpolicella Classico
+1536,Carignano del Sulcis
+1518,Bardolino Classico
+1721,Veneto
+1589,Fiano di Avellino
+1567,Collio
+1710,Valle d'Aosta
+3721,Conegliano-Valdobbiadene Prosecco Superiore Rive
+1713,Valpolicella
+1966,Cariñena
+2304,Kent
+1963,Campo de Borja
+2014,Rioja
+2005,Penedès
+1959,Bierzo
+2010,Ribera del Duero
+1969,Cava
+1994,Montilla-Moriles
+2017,Rueda
+2630,Zakarpattia (Закарпатська)
+3707,Cream Sherry
+1999,Navarra
+2018,Rías Baixas
+2567,Crimeia (Крим)
+2568,Odessa (Одеса)
+2282,Puente Alto
+2268,Colchagua Valley
+2285,Santiago
+2267,Central Valley (CL)
+2276,Maipo Valley
+2283,Rapel Valley
+2278,Maule Valley
+2265,Cachapoal Valley
+2266,Casablanca Valley
+2270,Elqui Valley
+2273,Limarí Valley
+2272,Leyda Valley
+2269,Curico Valley
+2576,Maldonado
+2570,Canelones
+2571,Carmelo
+2574,Juanico
+2581,San José
+2058,Mendoza
+2056,Lujan de Cuyo
+2047,Cafayate Valley
+2067,San Rafael
+2060,Patagonia
+2071,Uco Valley
+2602,Franschhoek
+2619,Stellenbosch
+2616,Robertson
+2627,Western Cape
+2600,Elgin
+2589,Cape Agulhas
+2613,Paarl
+2620,Swartland
+3659,Slanghoek
+2586,Breede River Valley
+2588,Calitzdorp
+2156,South Australia
+2132,Margaret River
+2158,South Eastern Australia
+2097,Barossa Valley
+2105,Clare Valley
+2107,Coonawarra
+2174,Yarra Valley
+2122,Heathcote
+2112,Frankland River
+2133,McLaren Vale
+2134,Mornington Peninsula
+2159,South West Australia
+2126,Hunter Valley
+2145,Pemberton
+2713,Swan Hill
+2140,New South Wales
+2094,Adelaide Hills
+2104,Central Victoria
+1848,Napa Valley
+1898,Sonoma Coast
+1823,Lodi
+1778,Columbia Valley
+1814,Knights Valley
+1868,Paso Robles
+2485,Marlborough
+1751,Alexander Valley
+1885,Santa Barbara County
+1934,Yountville
+1925,Willamette Valley
+1880,Rutherford
+1859,Oakville
+1855,North Coast
+1754,Anderson Valley
+1793,Eola-Amity Hills
+1910,Stags Leap District
+1826,Los Carneros
+1842,Monterey County
+1924,Washington
+1758,Arroyo Seco
+1787,Dry Creek Valley
+1788,Dundee Hills
+1879,Russian River Valley
+1802,Happy Canyon of Santa Barbara
+1768,Central Coast
+1777,Columbia Gorge Washington
+1753,Amador County
+1899,Sonoma County
+1794,Finger Lakes
+1927,Wisconsin
+1805,Horse Heaven Hills
+1921,Virginia
+1901,Sonoma Valley
+1846,Mount Veeder
+1852,New Mexico
+1914,Texas
+1782,Cucamonga Valley
+1912,Temecula Valley
+1875,Red Mountain
+2204,Niagara Peninsula
+2208,Okanagan Valley
+2209,Ontario
+3086,Vinemount Ridge
+3081,Beamsville Bench
+2203,Niagara Lakeshore
+2466,Valle de Guadalupe
+2465,Querétaro
+2463,Ensenada
+2434,Bekaa Valley
+2074,Burgenland
+2077,Kamptal
+2371,Santorini
+2416,Galilee
+2366,Peloponnesos
+2355,Macedonia
+2536,Taman Peninsula (Таманский полуостров)
+2374,Slopes of Meliton
+2527,Don Valley (Долина Дона)
+2525,Anapa (Анапа)
+2089,Wachau
+2332,Crete
+2400,Eger
+2413,Tokaj
+2492,Waiheke Island
+2478,Central Otago
+2483,Hawke's Bay
+2480,Gimblett Gravels
+2475,Auckland
+2082,Niederösterreich
+2477,Canterbury
+2457,Malta
+2490,North Island
+2564,Southeastern Anatolia
+2328,Chalkidiki
+2090,Wagram
+2080,Neusiedlersee
+2083,Steiermark
+2539,Goriška Brda
+2295,Morava
+2330,Continental Greece
+2387,Dalmatian Coast
+2344,Ilia
+2352,Krania
+2449,Moldova Viniculture
+2415,Villány
+2481,Gisborne
+2517,Transylvania
+2251,Valais
+2508,Murfatlar
+2238,Neuchâtel
+2219,Bielersee
+2486,Martinborough
+2079,Mittelburgenland
+2086,Südsteiermark
